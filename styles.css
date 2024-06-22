@@ -16,7 +16,7 @@ body{
   }
 
   .topnav {
-    background-color: #333;
+    background-color: #000000;
     overflow: hidden;
     opacity: .8;
   }
@@ -29,6 +29,12 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    background: #000000; 
+    padding: 20px;
   }
   
   /* Change the color of links on hover */
@@ -81,4 +87,60 @@ body{
     border-radius: 50%;
     overflow: hidden;
     margin-top: -6px;
+}
+
+.rainbow-text{
+	position: relative;
+	color: #000;
+	background: #fff;
+	mix-blend-mode: multiply;
+  overflow: hidden;
+  
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  padding: 2px 4px 6px;
+  margin: -2px -4px -6px;
+}
+.rainbow-text::before{
+	content: "";
+	position: absolute;
+	top:0;right:0;bottom:0;left:-100%;
+	background: white repeating-linear-gradient(90deg, #14ffe9 0%, #ffc800 16.66666%, #ff00e0 33.33333%, #14ffe9 50.0%);
+	mix-blend-mode: screen;
+	pointer-events: none;
+  animation: move 1s linear infinite;
+}
+
+@keyframes move{
+  0%{transform: translateX(0);}
+  100%{transform: translateX(50%);}
+}
+
+@supports not (mix-blend-mode: multiply) {
+	.rainbow-text{
+	-webkit-text-fill-color: transparent;
+	background-clip: text !important;
+	background: white repeating-linear-gradient(90deg, #14ffe9, #ffc800, #ff00e0, #14ffe9);
+    text-shadow: none;
+	}
+	.rainbow-text::before{ content: none; }
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background: #ffffff url(http://api.thumbr.it/whitenoise-300x300.png?background=eeeeeeff&noise=000000&density=15&opacity=10) center;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
