@@ -18,7 +18,7 @@ body{
   .topnav {
     background-color: #333;
     overflow: hidden;
-    opacity: .5;
+    opacity: .8;
   }
   
   /* Style the links inside the navigation bar */
@@ -73,3 +73,12 @@ body{
     background: red;
     margin: 20px;
   }
+
+
+  .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
