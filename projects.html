@@ -21,6 +21,39 @@ a:visited {
   text-decoration: none;
 }
 
+.button {
+  background-color: #aa60ff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.button:hover {background-color: #9148e6;}
+
+.button:active {
+  background-color: #bd83ff;
+  transform: translateY(1px);
+}
+
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 32px;}
+.button5 {border-radius: 50%;}
+
+.button a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
 
   body {
       font-family: 'Montserrat';font-size: 22px;
@@ -28,19 +61,25 @@ a:visited {
   /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  background: rgba(0, 0, 0, 0.8); 
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #4603e0;
+  box-shadow: inset 0 0 5px rgb(36, 36, 36, 0.8);
   border-radius: 30px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to right, #4603e0, #9660ec);
-  border-radius: 40px;
+  background: #4603e0;
+  border-radius: 0px;
 }
+
+.titletext {
+        color: #ffffff;
+        font-size:25px; 
+      }
 
   </style>
   </head>
@@ -50,8 +89,9 @@ a:visited {
             <a href="index.html" target="_self">Home</a>
             <a href="about.html" target="_self">About</a>
             <a href="projects.html" target="_self">Projects</a>
+            <a href="tools.html" target="_self">Tools</a>
             <div class="container">
-              <span class="rainbow-text">Realmzers Website</span>
+          <!-- <span class="titletext">Realmzer Site</span> -->
             </div>
           </div>
       </a>
@@ -61,22 +101,30 @@ a:visited {
     <p>Retro Traveler will be a retro platformer themed video game and it will be made in Haxeflixel.</p>
     <p>It will be available on Steam, Itch.io, and GameJolt.</p>
     <h1><div class="box box1">Coding</div></h1>
-    <h2>Realm Engine</h2>
-    <p>Realm Engine is a fork of Psych Engine to add more modding compatibilty and new features and performance improvements.</p>
-    <a href="https://github.com/Realmzer/FNF-RealmEngine/archive/refs/heads/main.zip" target="_self">Download Realm Engine (Latest Commit has to be compiled) </a>
-    <p><a href="https://github.com/Realmzer/FNF-RealmEngine/releases/tag/v1.0.0" target="_blank">Download Realm Engine (Stable Release)</a></p>
-    <P>Recomended</P>
+    <h2>RZ Engine</h2>
+    <p>RZ Engine is a fork of Psych Engine to add more modding compatibilty and new features and performance improvements.</p>
+    <a href="https://github.com/Realmzer/FNF-RZ-Engine/archive/refs/heads/main.zip" target="_self" class="button button4">Download RZ Engine (Latest Commit has to be compiled) </a>
+  <!--  <p><a href="https://github.com/Realmzer/FNF-RealmEngine/releases/tag/v1.0.0" target="_blank">Download RZ Engine (Stable Release)</a></p> -->
+    <!--<P>Recomended</P>-->
 
     <h1><div class="box box1">Sprite Editing</div></h1> 
-    <h2>Friday Night Funkin' RTX</h2>
-    <p>Friday Night Funkin' RTX is one of my other projects which I sprite edit and use Reshade to add RTX to Friday Night Funkin' Mods.</p>
-    <a href="https://gamebanana.com/dl/1216524" target="_self">FNF RTX Reshade Preset</a>
+    <h2>Funkin' RTX</h2>
+    <p>Funkin' RTX is one of my other projects which I sprite edit and use Reshade to add RTX to Friday Night Funkin' Mods.</p>
+    <a href="https://gamebanana.com/dl/1216524" target="_self" class="button button4">Funkin' RTX Reshade Preset</a>
   </body>
   </div>
 
   <div class="social-bar">
     <a href="https://www.youtube.com/channel/UCLGSJWLs-St8hKwY0WCZ5mg" target="_blank" rel="noopener noreferrer" class="youtube"><i class="fa fa-youtube"></i></a>
-    <a href="https://x.com/Realmzer" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://x.com/realmzerplus" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://github.com/Realmzer" target="_blank" rel="noopener noreferrer" class="github"><i class="fa fa-github"></i></a>
+    <a href="https://www.reddit.com/user/Realmye" target="_blank" rel="noopener noreferrer" class="reddit"><i class="fa fa-reddit"></i></a>
+    <a href="https://www.twitch.tv/realmzer" target="_blank" rel="noopener noreferrer" class="twitch"><i class="fa fa-twitch"></i></a>
   </div>
+
+  <p>Email: realmzerplus@gmail.com</p>
+
+
+  <p>Powered By: <a style="text-decoration: none; color: rgb(255, 255, 255)" href="https://pages.github.com/" target="_blank" >Github Pages</a></p>
 
 </html>

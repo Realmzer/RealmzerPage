@@ -2,7 +2,7 @@ body{
     margin: 0;
     background: linear-gradient(to right, #4603e0, #9660ec);
     text-align: center;
-}
+    }
 
 .box1 {
     background-color: #000;
@@ -70,13 +70,27 @@ body{
   }
   
   .twitter {
-    background: #000000;
-    
+    background: #11bcff;
     margin: 20px;
   }
   
   .youtube {
     background: red;
+    margin: 20px;
+  }
+
+  .github {
+    background: rgb(140, 0, 255);
+    margin: 20px;
+  }
+  
+  .reddit {
+    background: rgb(255, 69, 0);
+    margin: 20px;
+  }
+
+  .twitch {
+    background: rgb(169, 112, 255);
     margin: 20px;
   }
 
@@ -125,13 +139,7 @@ body{
 	.rainbow-text::before{ content: none; }
 }
 
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5vh;
-  background: #ffffff url(http://api.thumbr.it/whitenoise-300x300.png?background=eeeeeeff&noise=000000&density=15&opacity=10) center;
-}
+
 
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -144,3 +152,4 @@ body{
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
