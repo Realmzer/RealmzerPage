@@ -29,7 +29,24 @@
   border-radius: 0px;
 }
 
- 
+.float-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.float-on-hover:hover, .float-on-hover:focus, .float-on-hover:active {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
  span {
   text-shadow: 5px 10px 14px #000000;
 }
@@ -51,10 +68,18 @@
   transition: all 0.25s ease;
 }
 
-.button:hover {background-color: #9148e6;}
+.esign {
+    background-color: rgb(58, 183, 233)
+  }
+
+.scarlet {
+    background-color: rgb(248, 45, 45);
+}
+
+.button:hover {opacity: 0.7;}
 
 .button:active {
-  background-color: #bd83ff;
+  opacity: 0.9;
   transform: translateY(1px);
 }
 
@@ -107,33 +132,38 @@
   </div>
   <h2>Realmz IOS DNS </h2> 
   <p></p>
-  <a href="https://github.com/Realmzer/RealmzDNS/raw/main/rzdnsantirevoke.mobileconfig" target="_blank" class="button button4">Anti Blacklist + No Revokes</a>
+  <a href="https://github.com/Realmzer/RealmzDNS/raw/main/rzdnsantirevoke.mobileconfig" target="_blank" class="button button4 + float-on-hover">Anti Blacklist + No Revokes</a>
   <p></p>
-  <a href="https://github.com/Realmzer/RealmzDNS/raw/main/rzdnsantirevokeadblock.mobileconfig" target="_blank" class="button button4">Anti Blacklist + No Revokes + Adblock</a>
+  <a href="https://github.com/Realmzer/RealmzDNS/raw/main/rzdnsantirevokeadblock.mobileconfig" target="_blank" class="button button4 + float-on-hover">Anti Blacklist + No Revokes + Adblock</a>
   <p>
   <p>Uses NextDNS with no logs.</p>
-  <a href="https://nextdns.io/" target="_blank"><img src="images/nextDNS.png" alt="NextDNS" style="width:70px;height:70px;"></a>
+  <a href="https://nextdns.io/" target="_blank"><img src="images/nextDNS.png" alt="NextDNS" class="float-on-hover" style="width:70px;height:70px;"></a>
   <h2>Certificates For Signing</h2>
-  <a href="https://github.com/Realmzer/realmzerpage.assets/raw/main/Henan%20Provinsial.zip" target="_blank" class="glow + button button4">Henan Provincial Communications Planning Survey & Design Institute Co.,Ltd.</a>
+  <a href="https://github.com/Realmzer/realmzerpage.assets/raw/main/Henan%20Provinsial.zip" target="_blank" class="button button4 + float-on-hover">Henan Provincial Communications Planning Survey & Design Institute Co.,Ltd.</a>
   <p></p>
-  <a href="https://github.com/Realmzer/realmzerpage.assets/raw/main/Sunshine%20Insurance%20Group%20Co.,%20Ltd.zip" target="_blank" class="glow + button button4">Sunshine Insurance Group Co., Ltd</a>
+  <a href="https://github.com/Realmzer/realmzerpage.assets/raw/main/Sunshine%20Insurance%20Group%20Co.,%20Ltd.zip" target="_blank" class="button button4 + float-on-hover">Sunshine Insurance Group Co., Ltd</a>
   <p></p>
-  <a href="https://github.com/Realmzer/realmzerpage.assets/raw/main/Esign-Certs.zip" target="_blank" class="glow + button button4">ESign Certs (No Password)</a>
+  <a href="https://github.com/Realmzer/realmzerpage.assets/raw/main/Esign-Certs.zip" target="_blank" class="button button4 + float-on-hover">ESign Certs (No Password)</a>
   <p>Certificate Passwords: <h4>AppleP12.com
   <h2>Apps</h2>
-  <a href="https://resources.usescarlet.com/install.php" target="_blank" class="button button4">Scarlet (Use DNS)</a>
-  <a href="https://api.khoindvn.eu.org/fU8Gs6" target="_blank" class="button button4">ESign (Use DNS)</a>
+  <a href="https://resources.usescarlet.com/install.php" target="_blank" class="button button4 + scarlet + float-on-hover">
+    <img src="images/scarlet.jpg" alt="Icon" style="width: 35px; height: 35px; border-radius: 50%; vertical-align: middle;"> Scarlet (Use DNS)
+</a>
+<p></p>
+  <a href="https://api.khoindvn.eu.org/fU8Gs6" target="_blank" class="button button4 esign float-on-hover">
+    <img src="images/esign.png" alt="Icon" style="width: 35px; height: 35px; border-radius: 50%; vertical-align: middle;"> ESign (Use DNS)
+</a>
 </body>
 
 </div>
 
-  <div class="social-bar">
-    <a href="https://www.youtube.com/channel/UCLGSJWLs-St8hKwY0WCZ5mg" target="_blank" rel="noopener noreferrer" class="youtube"><i class="fa fa-youtube"></i></a>
-    <a href="https://x.com/realmzerplus" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa fa-twitter"></i></a>
-    <a href="https://github.com/Realmzer" target="_blank" rel="noopener noreferrer" class="github"><i class="fa fa-github"></i></a>
-    <a href="https://www.reddit.com/user/Realmye" target="_blank" rel="noopener noreferrer" class="reddit"><i class="fa fa-reddit"></i></a>
-    <a href="https://www.twitch.tv/realmzer" target="_blank" rel="noopener noreferrer" class="twitch"><i class="fa fa-twitch"></i></a>
-  </div>
+<div class="social-bar">
+  <a href="https://www.youtube.com/channel/UCLGSJWLs-St8hKwY0WCZ5mg" target="_blank" rel="noopener noreferrer" class="youtube float-on-hover"><i class="fa fa-youtube"></i></a>
+  <a href="https://x.com/realmzerplus" target="_blank" rel="noopener noreferrer" class="twitter float-on-hover"><i class="fa fa-twitter"></i></a>
+  <a href="https://github.com/Realmzer" target="_blank" rel="noopener noreferrer" class="github float-on-hover"><i class="fa fa-github "></i></a>
+  <a href="https://www.reddit.com/user/Realmye" target="_blank" rel="noopener noreferrer" class="reddit float-on-hover"><i class="fa fa-reddit"></i></a>
+  <a href="https://www.twitch.tv/realmzer" target="_blank" rel="noopener noreferrer" class="twitch float-on-hover"><i class="fa fa-twitch"></i></a>
+</div>
 
   <p>Email: realmzerplus@gmail.com</p>
 
