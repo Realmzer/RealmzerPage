@@ -1,2 +1,1 @@
-# RealmzerPage
-A website for me and my updates and downloads.
+# THIS PAGE HAS MOVED TO A NEW HOSTER
